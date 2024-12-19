@@ -210,17 +210,18 @@ h1 {
 .logo {
     cursor: pointer;
     transition: 500ms;
-    font-size: 23px;
+    font-size: 25px;
     color: rgb(18, 18, 18);
     border: none;
-    font-family: pacifico;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: none;
     padding-inline: 19px;
     padding-bottom: 3px;
     background-color: turquoise;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    box-shadow: 0 0 6px teal
+    box-shadow: 0 3px 6px teal;
 }
 
 .logo:hover {
@@ -334,6 +335,17 @@ h1 {
     }
 
     .navi2 .active:hover {
+        background-color: rgb(111, 176, 180);
+    }
+    .navi a:hover {
+        background-color: rgb(129, 129, 129);
+    }
+
+    .navi .active {
+        background-color: rgb(135, 210, 215);
+    }
+
+    .navi .active:hover {
         background-color: rgb(111, 176, 180);
     }
 

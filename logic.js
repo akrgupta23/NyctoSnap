@@ -38,7 +38,7 @@ function ThemeDown() {
         x.style.transition = "200ms"
         z.style.backgroundColor="gray";
         x.style.opacity = "0%";
-        setTimeout(() => { x.style.display = "none"; }, 300);
+        setTimeout(() => { x.style.display = "none"; }, 4000);
     }
     else {
         x.style.opacity = "100%";
@@ -49,7 +49,7 @@ function ThemeDown() {
             x.style.transition = "300ms"
             z.style.backgroundColor="gray";
             x.style.opacity = "0%";
-            setTimeout(() => { x.style.display = "none"; }, 400);
+            setTimeout(() => { x.style.display = "none"; }, 600);
         }, 3000)
     }
 }
