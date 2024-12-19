@@ -55,9 +55,9 @@ function ThemeDown() {
 }
 
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    applyLightTheme()
+    applyDarkTheme()
 } else {
-    applyDarkTheme();
+    applyLightTheme()
 }
 
 document.addEventListener("DOMContentLoaded", () => {
