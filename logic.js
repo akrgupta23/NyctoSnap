@@ -1,9 +1,3 @@
-function fadeout(){
-    var n = document.body;
-    n.style.animation = "fadein 1000ms reverse"
-    setTimeout(() => { n.style.visibility = "0"; }, 1000);
-}
-
 function Drop() {
     var x = document.getElementById("navi2");
     var y = document.getElementById("menu");
@@ -35,7 +29,7 @@ function ThemeDown() {
     var y = document.getElementById("themebtn");
     var z=document.getElementById("menu");
     if (x.style.display === "inline") {
-        x.style.transition = "200ms"
+        x.style.transition = "500ms"
         z.style.backgroundColor="gray";
         x.style.opacity = "0%";
         setTimeout(() => { x.style.display = "none"; }, 4000);
@@ -46,7 +40,7 @@ function ThemeDown() {
         z.style.backgroundColor="turquoise";
         x.style.display = "inline";
         setTimeout(() => {
-            x.style.transition = "300ms"
+            x.style.transition = "500ms"
             z.style.backgroundColor="gray";
             x.style.opacity = "0%";
             setTimeout(() => { x.style.display = "none"; }, 600);
@@ -108,12 +102,6 @@ function themetog() {
         applyDarkTheme();
         localStorage.setItem("theme", "dark");
     }
-}
-function hidepopup() {
-    var x = document.getElementById("pop");
-    x.style.transition = "300ms";
-    x.style.opacity = "0%";
-    setTimeout(() => { x.style.visibility = "hidden"; }, 350)
 }
 
 const words = ["Aperture", "Bokeh", "Contrast", "Exposure"]; // Array of words to type  

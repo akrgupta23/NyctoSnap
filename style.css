@@ -11,12 +11,8 @@
 }
 
 body {
-    animation: fadein 3500ms;
-}
-
-body {
+    animation: fadein 5000ms;
     margin-top: 10px;
-    /* transition: 500ms; */
     margin-bottom: 7vw;
     margin-inline: 2vw;
     background-color: rgb(10, 15, 20);
@@ -25,85 +21,30 @@ body {
     user-select: none;
 }
 
-.arrow {
-    height: 10px;
-    box-shadow: 0 0 3px gray;
-    width: 10px;
-    position: fixed;
-    background-color: black;
-    margin-left: calc(50% - 10px);
-    rotate: 45deg;
-    background-color: rgb(133, 131, 131);
-    margin-top: 5px;
-    display: none;
-    opacity: 89%;
-}
-
-#themebtn {
-    cursor: pointer;
-}
-
-@keyframes hideit {
-    0% {
-        opacity: 95%;
-    }
-
-    70% {
-        opacity: 85%;
-    }
-
-    100% {
-        opacity: 0%;
-        display: none;
-    }
-}
-
-a {
-    cursor: pointer;
-}
-
 button {
     cursor: pointer;
 }
 
-nav {
+* {
     text-align: center;
+    transition: 500ms;
 }
 
-main {
-    text-align: center;
+.active:hover {
+    background-color: rgb(48, 184, 170);
 }
 
-footer {
-    text-align: center;
-}
-
-.navi .active:hover {
-    background-color: teal;
-}
-
-.navi .active {
+.active {
     background: turquoise;
     box-shadow: 0 0 3px turquoise;
 }
 
-.navi2 .active {
-    background: turquoise;
-    box-shadow: 0 0 3px teal;
-}
-
-.navi2 .active:hover {
-
-    background-color: teal;
-}
-
 .navi {
     box-shadow: 0 0 10px turquoise;
-    transition: 50ms;
     background-color: rgb(12, 25, 30);
     border-radius: 10px;
     position: fixed;
-    width: 96vw;
+    width: 95.7vw;
     padding: 3px;
     overflow: none;
     z-index: 1000;
@@ -119,44 +60,28 @@ footer {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     display: none;
-    transition: 1500ms;
-    max-width: 95.5%;
+    max-width: 95.7vw;
     z-index: 1000;
     box-shadow: 0 6px 7px turquoise;
 }
 
-.navi2 a {
-    transition: 500ms;
+ a {
     text-decoration: none;
     font-size: 22px;
     font-weight: 800;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: black;
-    padding: 3px 3%;
-    float: left;
-    background: grey;
-    border-radius: 7px;
-    margin: 2px;
-    text-align: left;
-}
-
-.navi a {
-    transition: 500ms;
-    text-decoration: none;
-    font-size: 22px;
-    font-weight: 800;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: black;
+    color: rgb(0, 0, 0);
     padding: 3px 4%;
     float: left;
-    background-color: rgb(40, 80, 90);
+    background-color: rgb(97, 97, 97);
     border-radius: 7px;
     margin: 2px;
     text-align: center;
+    cursor: pointer;
 }
 
 a:hover {
-    background-color: rgb(88, 88, 88);
+    background-color: rgb(70, 70, 70);
 }
 
 .ig img {
@@ -172,7 +97,6 @@ a:hover {
     background-color: grey;
     border-radius: 10px;
     margin: 2px;
-    transition: 250ms;
     cursor: pointer;
 }
 
@@ -182,7 +106,7 @@ a:hover {
     }
 
     50% {
-        text-shadow: 0 0 40px turquoise;
+        text-shadow: 0 0 30px turquoise;
     }
 
     100% {
@@ -192,7 +116,7 @@ a:hover {
 
 
 h1 {
-    animation: glow 5s infinite;
+    animation: glow 3s infinite;
     color: turquoise;
     margin-top: 30px;
     font-family: pacifico;
@@ -209,7 +133,6 @@ h1 {
 
 .logo {
     cursor: pointer;
-    transition: 500ms;
     font-size: 25px;
     color: rgb(18, 18, 18);
     border: none;
@@ -250,7 +173,6 @@ h1 {
     border-radius: 100px;
     border: solid 3px rgb(40, 80, 90);
     z-index: 999;
-    transition: 500ms;
     background-image: url(/image/night.png);
     width: 100px;
     height: 50px;
@@ -262,7 +184,6 @@ h1 {
 }
 
 .togcir {
-    transition: 500ms;
     background-image: url(/image/moon.png);
     border-radius: 100%;
     margin-right: 0;
@@ -300,10 +221,6 @@ h1 {
         display: none;
     }
 
-    .arrow {
-        display: inline;
-    }
-
     p {
         margin-top: 40px;
     }
@@ -326,26 +243,15 @@ h1 {
     background-color: powderblue;
     color: black;
 
-    .navi2 a:hover {
+    a:hover {
         background-color: rgb(129, 129, 129);
     }
 
-    .navi2 .active {
+    .active {
         background-color: rgb(135, 210, 215);
     }
 
-    .navi2 .active:hover {
-        background-color: rgb(111, 176, 180);
-    }
-    .navi a:hover {
-        background-color: rgb(129, 129, 129);
-    }
-
-    .navi .active {
-        background-color: rgb(135, 210, 215);
-    }
-
-    .navi .active:hover {
+    .active:hover {
         background-color: rgb(111, 176, 180);
     }
 
@@ -360,14 +266,6 @@ h1 {
 
     h1 {
         color: white !important;
-    }
-
-    .navi a {
-        background-color: rgb(182, 182, 182);
-    }
-
-    .navi .active {
-        background-color: rgb(135, 210, 215);
     }
 
     nav {
@@ -402,7 +300,6 @@ h1 {
 }
 
 .text-container {
-    transition: 700ms;
     text-align: center;
     background-color: rgb(7, 29, 34);
     font-size: 40px;
