@@ -1,5 +1,15 @@
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 body {
+    animation: fadein 3500ms;
     margin-top: 10px;
     margin-bottom: 7vw;
     margin-inline: 2vw;
