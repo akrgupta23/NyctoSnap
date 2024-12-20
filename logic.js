@@ -18,10 +18,7 @@ function Drop() {
 const imageFilenames = ["day.png", "moon.png", "sun.png", "night.png"];
 imageFilenames.forEach((filename) => {
     const img = document.createElement("img");
-
     img.src = `/image/${filename}`;
-
-    document.body.appendChild(img);
 });
 
 function DropOut() {

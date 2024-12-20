@@ -310,7 +310,7 @@ h1 {
     border-radius: 20px;
     box-shadow: 0 0 10px turquoise;
     width: 220px;
-    padding-bottom: 10px;
+    padding-bottom: 7px;
     left: 50%;
     transform: translateX(-50%);
 }
