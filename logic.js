@@ -15,6 +15,15 @@ function Drop() {
     }
 }
 
+const imageFilenames = ["day.png", "moon.png", "sun.png", "night.png"];
+imageFilenames.forEach((filename) => {
+    const img = document.createElement("img");
+
+    img.src = `/image/${filename}`;
+
+    document.body.appendChild(img);
+});
+
 function DropOut() {
     var x = document.getElementById("navi2");
     var y = document.getElementById("menu");
@@ -27,21 +36,21 @@ function DropOut() {
 function ThemeDown() {
     var x = document.getElementById("theme");
     var y = document.getElementById("themebtn");
-    var z=document.getElementById("menu");
+    var z = document.getElementById("menu");
     if (x.style.display === "inline") {
         x.style.transition = "500ms"
-        z.style.backgroundColor="gray";
+        z.style.backgroundColor = "gray";
         x.style.opacity = "0%";
         setTimeout(() => { x.style.display = "none"; }, 4000);
     }
     else {
         x.style.opacity = "100%";
         x.style.marginTop = "73px";
-        z.style.backgroundColor="turquoise";
+        z.style.backgroundColor = "turquoise";
         x.style.display = "inline";
         setTimeout(() => {
             x.style.transition = "500ms"
-            z.style.backgroundColor="gray";
+            z.style.backgroundColor = "gray";
             x.style.opacity = "0%";
             setTimeout(() => { x.style.display = "none"; }, 600);
         }, 3000)
