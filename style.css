@@ -26,6 +26,7 @@ button {
 * {
     text-align: center;
     transition: 500ms;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .active:hover {
