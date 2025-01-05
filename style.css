@@ -85,6 +85,7 @@ a:hover {
 
 .ig img {
     margin-top: 5px;
+    user-select: none;
 }
 
 ::-webkit-scrollbar {
