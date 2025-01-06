@@ -249,7 +249,7 @@ h1 {
     align-items: center;
     justify-content: center;
     margin-inline: 2vw; 
-    background-color: rgb(135, 210, 215); 
+    background-color: turquoise; 
     height: 7vh; 
     border-radius: 1000px;
     min-width: 300px;
@@ -264,11 +264,12 @@ h1 {
     width: 3vw;
     border-radius: 1000px;
     padding-inline: 25px;
-    background-color: white!important;
+    background-color:rgb(7, 29, 34)!important;
+    color: turquoise;
 }
 
 .arrow:hover{
-    background: rgb(152, 233, 233)!important;
+    background: teal!important;
 }
 
 .themeswitch {
@@ -285,6 +286,19 @@ h1 {
 
     .active:hover {
         background-color: rgb(111, 176, 180);
+    }
+
+    .imgnav{
+        background-color: rgb(135, 210, 215);
+    }
+
+    .imgnav a{
+        background-color: white!important;
+        color: black!important;
+    }
+
+    .arrow:hover{
+        background: rgb(168, 244, 250)!important;
     }
 
     a {
