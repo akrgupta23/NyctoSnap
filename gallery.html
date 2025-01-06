@@ -11,6 +11,41 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
     <title>NyctoSnap | Gallery</title>
+
+    <script defer>
+        var text = "creature";
+        var creatures = ["natural", "artificial"];
+        var currentIndex = 0;
+        var i1 = getElementById("i1");
+        var i2 = getElementById("i2");
+        var i3 = getElementById("i3");
+        var i4 = getElementById("i4");
+        var i5 = getElementById("i5");
+        var i6 = getElementById("i6");
+
+        function changeCreature() {
+            currentIndex = (currentIndex + 1 + creatures.length) % creatures.length;
+                document.getElementById("creature-text").textContent = creatures[currentIndex];
+                if(creatures[currentIndex]=="artificial"){
+                    document.body.classList.add("togit");
+                }
+                else{
+                    document.body.classList.remove("togit");
+                }
+        }
+
+        function changeCreatureReverse() {
+            currentIndex = (currentIndex - 1 + creatures.length) % creatures.length;
+            document.getElementById("creature-text").textContent = creatures[currentIndex];
+            if(creatures[currentIndex]=="artificial"){
+                    document.body.classList.add("togit");
+                }
+                else{
+                    document.body.classList.remove("togit");
+                }
+        }
+    </script>
+
 </head>
 
 <body>
@@ -46,18 +81,24 @@
 
     <main onclick="DropOut()">
         <h1>Gallery</h1>
+        <div class="imgnav">
+            <a class="arrow" onclick="changeCreatureReverse()"><</a>
+            <a id="creature-text" style="margin-inline: 0!important; width: 25vw!important; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 26px!important;">natural</a>
+            <a class="arrow" onclick="changeCreature()">></a>
+        </div>
         <div class="row-outer">
             <div class="container">
                 <div class="grid-gallery">
-                    <div class="item item1"></div>
-                    <div class="item item2"></div>
-                    <div class="item item3"></div>
-                    <div class="item item4"></div>
-                    <div class="item item5"></div>
-                    <div class="item item6"></div>
+                    <div id="i1" class="item item1"></div>
+                    <div id="i2" class="item item2"></div>
+                    <div id="i3" class="item item3"></div>
+                    <div id="i4" class="item item4"></div>
+                    <div id="i5" class="item item5"></div>
+                    <div id="i6" class="item item6"></div>
                 </div>
             </div>
         </div>
+
     </main>
 
     <footer>
